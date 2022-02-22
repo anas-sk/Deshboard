@@ -29,53 +29,119 @@ export default function Rightbar() {
           <p>Reports</p>
           <ul className="Reports-Dashboard">
             <li>
-              <a href="/" className="Dash_li Dash">
+              <a href="/" className="Dash_li Dash OnHoverClass">
                 <DonutLarge /> <span className=" Dash_li Dash"> Dashboard</span>
               </a>
             </li>
           </ul>
           <ul className="Reports-Dashboard">
             <li>
-              <a href="/" className="Dash_li">
+              <a href="/" className="Dash_li OnHoverClass">
                 <SignalCellularAlt /> <span> Dashboard Alternative</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <div className="Management">
-          <p>
+        {/* <div class="dropdown">
+          <p class="dropbtn">Dropdown</p>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> */}
+
+        <div className="Management dropdown">
+          <p
+            className="dropdown-toggle dropbtn OnHoverClass"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
             <PersonOutlineOutlined /> Customers
           </p>
-          <ul>
-            <li className="menu_li">List Customers</li>
-            <li className="menu_li">View Customers</li>
-            <li className="menu_li">Edit Customers</li>
+          <ul
+            class="dropdown-menu dropdown-content"
+            aria-labelledby="dropdownMenuLink"
+          >
+            <li>
+              <a className="dropdown-item OnHoverClass" href="/">
+                List Customers
+              </a>
+            </li>
+            <li>
+              <a className="dropdown-item OnHoverClass" href="/">
+                View Customers
+              </a>
+            </li>
+            <li>
+              <a className="dropdown-item OnHoverClass" href="/">
+                Edit Customers
+              </a>
+            </li>
           </ul>
         </div>
         <div className="Products">
-          <p>
+          <p
+            className="dropdown-toggle OnHoverClass"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <ShoppingCartOutlined /> Products
           </p>
         </div>
         <div className="Orders">
-          <p>
+          <p
+            className="dropdown-toggle OnHoverClass"
+            type="button"
+            id="dropdownMenuButton3"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <FolderOutlined /> Orders
           </p>
         </div>
         <div className="Invoices">
-          <p>
+          <p
+            className="dropdown-toggle OnHoverClass"
+            type="button"
+            id="dropdownMenuButton4"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <ArticleOutlined /> Invoices
           </p>
         </div>
         <div className="Applications">
           <p>Applications</p>
           <ul>
-            <li className="menu_li">
-              <ApartmentOutlined /> Projects Platform
+            <li>
+              <a
+                className="nav-link dropdown-toggle application OnHoverClass"
+                href="/"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <ApartmentOutlined /> Projects Platform
+              </a>
             </li>
-            <li className="menu_li">
-              <ShareOutlined /> Projects Platform
+            <li>
+              <a
+                className="nav-link dropdown-toggle application OnHoverClass"
+                href="/"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <ShareOutlined /> Projects Platform
+              </a>
             </li>
           </ul>
         </div>
